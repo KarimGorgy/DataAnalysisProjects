@@ -63,7 +63,6 @@ features = ['dollars','index','date']
 target = 'headline'
 dates = np.array(df['date']).reshape(-1,1)
 modelIndex = LinearRegression()
-#modelIndex.fit(df['date'],df['index'])
 modelIndex.fit(dates,df['index'])
 
 yIndex = modelIndex.coef_*df['date']+modelIndex.intercept_

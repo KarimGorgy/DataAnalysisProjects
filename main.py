@@ -38,7 +38,7 @@ for col in data.columns[2:]:
 #Plot the remaining columns with respect to time
 plt.plot(data['Date'],data['Core'], label='Core')
 plt.plot(data['Date'],data['Regulated Items'],label='Regulated Items')
-plt.plot(data['Date'],data['Fruits and Vegetables'],label='Fruits and Veggies')
+#plt.plot(data['Date'],data['Fruits and Vegetables'],label='Fruits and Veggies')
 
 # Show legend
 plt.legend()
